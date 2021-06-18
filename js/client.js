@@ -7,7 +7,6 @@ const messageContainer = document.querySelector(".container")
 
 // Audio that will play on receiving messages
 var audio = new Audio('ping2.mp3');
-var audio1 = new Audio('ting.mp3');
 
 // Function which will append event info to the contaner
 const append = (message, position)=>{
@@ -18,10 +17,6 @@ const append = (message, position)=>{
     messageContainer.append(messageElement);
     if(position =='left'){ 
         audio.play();
-    }
-
-    else if (position == 'right'){
-        audio1.play();
     }
 }
 
